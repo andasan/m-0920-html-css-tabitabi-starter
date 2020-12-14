@@ -146,6 +146,27 @@ p {
   color: var(--clr-primary-1);
   background: var(--clr-primary-8);
 }
+section{
+  padding: 5rem 0;
+}
+.section {
+  padding: 5rem 0;
+}
+.section-title{
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.section-title h2{
+  text-transform: uppercase;
+}
+.section-title span {
+  color: var(--clr-primary-5);
+}
+.section-center{
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
 
 /*
 =============== 
@@ -263,7 +284,7 @@ Hero
 */
 .hero {
   min-height: 100vh;
-  background: var(--clr-primary-5);
+  background: linear-gradient(rgba(44, 174,186, .7), rgba(0,0,0,0.7)), url('../images/main.jpeg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -273,17 +294,100 @@ Hero
   color: var(--clr-white);
   padding: 0 3rem;
 }
+.hero-banner h1{
+  text-transform: uppercase;
+}
+.hero-banner p{
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--clr-white);
+  letter-spacing: var(--spacing);
+}
+.hero-btn{
+  padding: 0.9rem 1.6rem;
+  font-size: 1.25rem;
+  background-color: var(--clr-white);
+  color: var(--clr-primary-5)
+}
+.hero-btn:hover{
+  background: transparent;
+  color: var(--clr-white);
+  border-color: var(--clr-white);
+}
 /*
 =============== 
 About
 ===============
 */
+.about-img, .about-info{
+  margin-bottom: 2rem;
+}
+.about-center{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-img,.about-info{
+  flex: 0 0 calc(50% - 2rem);
+  margin-bottom: 0;
+  align-self: center;
+}
 /*
 =============== 
 Services
 ===============
 */
-
+.services{
+  background: var(--clr-grey-10);
+}
+.service{
+  text-align: center;
+}
+.service-icon{
+  background-color: var(--clr-primary-5);
+  color: var(--clr-primary-1);
+  padding: .5rem;
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.service-text{
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 576px) {
+  .services-center{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .service{
+    flex: 0 0 calc(50% - 1rem);
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .service{
+    flex: 0 0 calc(33.333% - 1rem);
+  }
+}
+@media (min-width: 1170px) {
+  .service{
+    display: flex;
+    text-align: left;
+  }
+  .service-icon{
+    align-self: start;
+  }
+  .service-info{
+    padding-left: 1rem;
+  }
+  .service-title{
+    margin-bottom: 0.5rem;
+  }
+}
 /*
 =============== 
 Featured Tours
