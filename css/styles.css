@@ -212,7 +212,7 @@ Navbar
 .show-links {
   height: 280px;
 }
-@media (min-width: 992px) {
+@media (min-width: 769px) {
   /* hide toggle button */
   .navbar {
     padding: 1rem 2rem;
@@ -261,6 +261,18 @@ Navbar
 Hero
 ===============
 */
+.hero {
+  min-height: 100vh;
+  background: var(--clr-primary-5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-banner {
+  text-align: center;
+  color: var(--clr-white);
+  padding: 0 3rem;
+}
 /*
 =============== 
 About
